@@ -8,7 +8,7 @@ const UserProvider = ({ children }) => {
 
   // load all users
   useEffect(() => {
-    fetch('http://localhost:5000/users')
+    fetch('https://pharmeasy-store-server.onrender.com/users')
       .then(res => res.json())
       .then(data => setUsers(data));
   }, []);

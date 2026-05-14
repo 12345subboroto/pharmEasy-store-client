@@ -1,7 +1,7 @@
 import React from 'react'
 import DetailUsers from './DetailUsers'
 
-const usersPromise = fetch('http://localhost:5000/users')
+const usersPromise = fetch('https://pharmeasy-store-server.onrender.com/users')
   .then(res => res.json());
 
 function Details() {

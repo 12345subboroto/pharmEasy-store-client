@@ -8,7 +8,7 @@ const Home = () => {
 
   // LOAD USERS
   useEffect(() => {
-    fetch('http://localhost:5000/users')
+    fetch('https://pharmeasy-store-server.onrender.com/users')
       .then(res => res.json())
       .then(data => setUsers(data));
   }, [setUsers]);
@@ -25,7 +25,7 @@ const Home = () => {
 
     const newUser = { name, amount, phone, createdAt };
 
-    fetch('http://localhost:5000/users', {
+    fetch('https://pharmeasy-store-server.onrender.com/users', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

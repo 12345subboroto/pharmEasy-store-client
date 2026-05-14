@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/update/:id',
-        loader: ({params})=> fetch(`http://localhost:5000/users/${params.id}`),
+        loader: ({params})=> fetch(`https://pharmeasy-store-server.onrender.com/users/${params.id}`),
         Component: UpdateUser
       }
     ]

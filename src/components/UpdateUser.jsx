@@ -19,7 +19,7 @@ const UpdateUser = () => {
 
     const updatedUser = { name, amount, phone };
 
-    fetch(`http://localhost:5000/users/${user._id}`, {
+    fetch(`https://pharmeasy-store-server.onrender.com/users/${user._id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json'

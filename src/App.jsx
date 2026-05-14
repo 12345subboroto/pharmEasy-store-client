@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './components/Home'
 
-const usersPromise = fetch('http://localhost:5000/users').then(res =>res.json());
+const usersPromise = fetch('https://pharmeasy-store-server.onrender.com/users').then(res =>res.json());
 
 function App() {
   return (

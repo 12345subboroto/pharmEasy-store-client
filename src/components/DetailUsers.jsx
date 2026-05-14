@@ -36,7 +36,7 @@ const DetailUsers = () => {
   };
 
   const confirmDelete = () => {
-    fetch(`http://localhost:5000/users/${deleteId}`, {
+    fetch(`https://pharmeasy-store-server.onrender.com/users/${deleteId}`, {
       method: 'DELETE'
     })
       .then(res => res.json())
