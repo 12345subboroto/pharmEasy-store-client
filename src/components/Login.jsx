@@ -19,35 +19,37 @@ function Login() {
   }
 
   return (
-    <div className='pl-150 pt-28'>
-      <form onSubmit={handleLogin}>
-        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+    <div className="min-h-screen flex items-center justify-center p-4">
+      <form onSubmit={handleLogin} className="w-full max-w-sm">
 
-          <legend className="fieldset-legend">Login</legend>
+        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-6">
+
+          <legend className="fieldset-legend text-center">Login</legend>
 
           <label className="label">User Name</label>
           <input
             type="text"
             placeholder="Username"
-            className="input"
+            className="input w-full"
             value={user}
             onChange={(e) => setUser(e.target.value)}
           />
 
-          <label className="label">Password</label>
+          <label className="label mt-2">Password</label>
           <input
             type="password"
             placeholder="Password"
-            className="input"
+            className="input w-full"
             value={pass}
             onChange={(e) => setPass(e.target.value)}
           />
 
-          <button type="submit" className="btn btn-neutral mt-4">
+          <button type="submit" className="btn btn-neutral mt-4 w-full">
             Login
           </button>
 
         </fieldset>
+
       </form>
     </div>
   )
